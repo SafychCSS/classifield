@@ -1,0 +1,14 @@
+@import "normalize";
+@import "mixin";
+@import "settings";
+
+/*** header ***/
+.header {
+    padding: 10px 0;
+}
+
+.logo {}
+
+.search {
+    border: 1px solid #ccc;
+}

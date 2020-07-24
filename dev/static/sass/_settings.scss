@@ -1,11 +1,51 @@
 body {
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f9fc;
 }
 
 * {
     outline: 0;
 }
 
+$link-color: #0670ec;
+$hover-link-color: #ff6633;
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $hover-link-color;
+    }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    color: #333;
+    font-weight: normal;
+}
+
 .dropdown-menu {
     width: 250px;
+}
+
+.dropdown-toggle {
+    color: #fff;
+    font-weight: 300;
+}
+
+.btn-add {
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    color: #fff;
+    border-radius: 2px;
+    background-color: $hover-link-color;
+    transition: .2s;
+
+    &:hover {
+        color: #fff;
+        background-color: darken($hover-link-color, 5%);
+    }
 }

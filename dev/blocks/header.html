@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,24 +15,18 @@
     <!-- begin .header -->
     <header class="header">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
+            <div class="row align-items-center justify-content-between mb-3">
                 <div class="col-sm-2">
                     <a href="#" class="logo">domen-naverno.ru</a>
                 </div>
-                <div class="col-sm-5">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Поиск объявлений" aria-label="Поиск объявлений" aria-describedby="button-addon2">
-                        <button class="btn border btn-light" type="button" id="button-addon2">Найти</button>
-                    </div>
-                </div>
                 <div class="col-sm-2">
-                    <div class="dropdown">
-                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false" data-offset="0, 10">
+                    <div class="dropdown d-flex">
+                        <a class="dropdown-toggle ml-auto" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false" data-offset="-108, 10">
                             Вход / Регистрация
                         </a>
 
                         <div class="dropdown-menu">
-                            <form class="px-4 py-3">
+                            <form class="px-4 py-3" method="post" action="/">
                                 <div class="mb-3">
                                     <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Email address">
                                 </div>
@@ -47,7 +41,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-info">Войти</button>
+                                <button type="submit" class="btn btn-accent">Войти</button>
                             </form>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Регистрация</a>
@@ -55,8 +49,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 d-flex">
-                    <a href="#" type="button" class="btn btn-add ml-auto">Подать объявление</a>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-sm-7">
+                    <form method="post" action="/">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Поиск объявлений" aria-label="Поиск объявлений" aria-describedby="button-addon2">
+                            <button class="btn border btn-light" type="submit" id="button-addon2">Найти</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-5 d-flex">
+                    <a href="#" type="button" class="btn btn-accent ml-auto">Подать объявление</a>
                 </div>
             </div>
         </div>

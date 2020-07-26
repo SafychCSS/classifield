@@ -11,6 +11,7 @@ body {
 
 $link-color: #0670ec;
 $hover-link-color: #ff6633;
+$bg-color: #2b3d61;
 
 a {
     color: $link-color;
@@ -21,9 +22,26 @@ a {
     }
 }
 
+.wrapper {
+    &__block {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    &__breadcrumb {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-five {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6{
-    color: #333;
     font-weight: normal;
 }
 
@@ -36,7 +54,7 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 300;
 }
 
-.btn-add {
+.btn-accent {
     font-size: 14px;
     letter-spacing: 0.025em;
     color: #fff;
@@ -47,5 +65,25 @@ h1, h2, h3, h4, h5, h6,
     &:hover {
         color: #fff;
         background-color: darken($hover-link-color, 5%);
+    }
+}
+
+.breadcrumb {
+    background: transparent;
+}
+
+.box {
+    padding: 20px;
+    background-color: #fff;
+    transition: .3s;
+
+    &_shadow {
+        &:hover {
+            box-shadow: 0 2px 20px 0 #dbdbe8;
+        }
+    }
+
+    &_list {
+        padding: 0;
     }
 }

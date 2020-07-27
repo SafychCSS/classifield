@@ -12,6 +12,8 @@ body {
 $link-color: #0670ec;
 $hover-link-color: #ff6633;
 $bg-color: #2b3d61;
+$bg-color-light: #f8f9fc;
+
 
 a {
     color: $link-color;
@@ -52,6 +54,10 @@ h1, h2, h3, h4, h5, h6,
 .dropdown-toggle {
     color: #fff;
     font-weight: 300;
+}
+
+.bg-color-light {
+    background-color: $bg-color-light;
 }
 
 .btn-accent {
